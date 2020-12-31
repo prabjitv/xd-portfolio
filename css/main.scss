@@ -61,7 +61,7 @@ section {
 .left {
   position: absolute;
   top: 3em;
-  left: -337.5px;
+  left: -50%;
   z-index: -1;
 }
 
@@ -101,5 +101,210 @@ section {
   background: #EEEEEE;
   padding: 2em;
   border-radius: 10px;
-  
+  margin-bottom: 1em;
+
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 1em auto 2em auto;
+
+    &.one {
+      width: 151px;
+    }
+    &.two {
+      width: 133px;
+    }
+    &.three {
+      width: 132px;
+    }
+  }
+}
+
+.skill-title {
+  font-weight: bold;
+}
+
+.skill-desc {
+  margin-bottom: 2em;
+}
+
+.capstone {
+  background: #eeeeee;
+}
+
+.capstone-container a img {
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.resume {
+  background: #0840F6;
+}
+
+.resume-container ul li {
+  background: #EEEEEE;
+  padding: 2em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 1em auto 2em auto;
+
+    &.one {
+      width: 151px;
+    }
+    &.two {
+      width: 273px;
+    }
+    &.three {
+      width: 280px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .recent, .capstone {
+    text-align: left;
+  }
+  .recent, .capstone-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left, .capstone-left {
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em
+  }
+  .capstone {
+    padding-top: 7em;
+  }
+  .capstone-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+
+    header {
+      background: #032FBF;
+    }  
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+
+  .social-header {
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 7em;
+      float: right;
+      align-items: center;
+
+      .one {
+        width: 40px;
+      }
+      .two {
+        width: 33px;
+      }
+      .three {
+        width: 31px;
+      }
+    }
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+
+    .content {
+      background: #0840F6;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .hero-arrow {
+    margin: unset;
+  }
+  .hero-shapes {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .capstone img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0em;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0em;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
 }
