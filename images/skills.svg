@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152.414" height="152.414" viewBox="0 0 152.414 152.414">
+  <g id="Group_8" data-name="Group 8" transform="translate(-443.793 -3258.793)">
+    <path id="Polygon_32" data-name="Polygon 32" d="M66,0l66,66H0Z" transform="translate(520.146 3401.004) rotate(-90)" fill="#0840f6"/>
+    <path id="Polygon_35" data-name="Polygon 35" d="M66,0l66,66H0Z" transform="translate(520.146 3269.004) rotate(90)" fill="#0840f6"/>
+    <line id="Line_38" data-name="Line 38" x1="151" y2="151" transform="translate(444.5 3259.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_41" data-name="Line 41" y1="20.843" transform="translate(520.15 3313.8)" fill="none" stroke="#0840f6" stroke-linecap="round" stroke-width="11" stroke-dasharray="0 41"/>
+  </g>
+</svg>
