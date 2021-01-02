@@ -57,7 +57,6 @@ header ul a {
   color: #eeeeee;
   display: -ms-grid;
   display: grid;
-  text-align: center;
   padding: 4em;
 }
 
@@ -282,7 +281,6 @@ section {
   .hero .content {
     background: #0840F6;
     padding: 6em 8em 6em 4em;
-    text-align: left;
   }
   .hero .content h1 {
     font-size: 3em;
@@ -331,5 +329,15 @@ section {
   .hero .content {
     padding: 9em 20em 6em 20em;
   }
+}
+
+.arrow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EEEEEE;
 }
 /*# sourceMappingURL=main.css.map */

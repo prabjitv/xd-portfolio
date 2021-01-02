@@ -46,7 +46,7 @@ header {
   background: #0840F6;
   color: #eeeeee;
   display: grid;
-  text-align: center;
+  // text-align: center;
   padding: 4em;
 }
 
@@ -255,7 +255,7 @@ section {
     .content {
       background: #0840F6;
       padding: 6em 8em 6em 4em;
-      text-align: left;
+      // text-align: right;
 
       h1 {
         font-size: 3em;
@@ -263,6 +263,12 @@ section {
       }
     }
   }
+
+  // .stagger1 {
+  //   display: flexbox;
+  //   justify-content: right;
+
+  // }
 
   .hero-arrow {
     margin: unset;
@@ -308,3 +314,10 @@ section {
     padding: 9em 20em 6em 20em;
   }
 }
+
+.arrow {
+  justify-content: center;
+  align-items: center;
+  background-color: #EEEEEE
+;}
+
