@@ -11,15 +11,27 @@
     <div class="splashpage">
       <div class="nav-container">
         <header>
-          <a href="index.html" class="logo"
-            ><img src="/images/Prabjit Virdee.svg " alt="Prabjit's name"
-          /></a>
+          <a href="index.html" class="logo">
+            <img src="/images/Prabjit Virdee.svg " alt="Prabjit's name" />
+          </a>
 
           <nav>
             <ul>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Hire Me</a></li>
+              <li>
+                <a href="#">
+                  <img src="/images/Work.svg" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/NavSkills.svg" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/Hire Me.svg" />
+                </a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -41,109 +53,14 @@
       <div class="hero">
         <div class="content">
           <div class="headline">
-            <svg
-              class="stagger1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="100%"
-              height="100%"
-              viewBox="0 0 492 300"
-            >
-              <g
-                id="Group_11"
-                data-name="Group 11"
-                transform="translate(-186 -282)"
-              >
-                <text
-                  id="Develop"
-                  transform="translate(432 429)"
-                  fill="#eee"
-                  font-size="150"
-                  font-family="FuturaPT-Book, Futura PT"
-                >
-                  <tspan x="-245.7" y="0">Develop</tspan>
-                </text>
-                <text
-                  id="with_Design"
-                  data-name="with Design"
-                  transform="translate(422 499)"
-                  fill="#eee"
-                  font-size="73"
-                  font-family="FuturaPT-Medium, Futura PT"
-                  font-weight="500"
-                >
-                  <tspan x="-167.608" y="0">with Design</tspan>
-                </text>
-                <text
-                  id="in_Mind_"
-                  data-name="in Mind "
-                  transform="translate(433 564)"
-                  fill="#eee"
-                  font-size="60"
-                  font-family="FuturaPT-Demi, Futura PT"
-                  font-weight="300"
-                >
-                  <tspan x="-103.5" y="0">in Mind</tspan>
-                </text>
-              </g>
-            </svg>
+                <a href="#">
+                  <img style="height: 400px;" src="/images/devwithdesigninmind.svg" />
+                </a>
           </div>
-          <svg
-            class="arrow"
-            width="77.556"
-            height="105.143"
-            viewBox="0 0 77.556 105.143"
-          >
-            <g
-              id="Group_5"
-              data-name="Group 5"
-              transform="translate(-1029.722 -808)"
-            >
-              <line
-                id="Line_34"
-                data-name="Line 34"
-                y1="20.843"
-                transform="translate(1068.5 886.8)"
-                fill="none"
-                stroke="#eee"
-                stroke-linecap="round"
-                stroke-width="11"
-                stroke-dasharray="0 41"
-              />
-              <line
-                id="Line_35"
-                data-name="Line 35"
-                y1="74.143"
-                transform="translate(1068.5 813.5)"
-                fill="none"
-                stroke="#eee"
-                stroke-linecap="round"
-                stroke-width="11"
-              />
-              <line
-                id="Line_36"
-                data-name="Line 36"
-                y1="21.143"
-                x2="21"
-                transform="translate(1078.5 876.5)"
-                fill="none"
-                stroke="#eee"
-                stroke-linecap="round"
-                stroke-width="11"
-              />
-              <line
-                id="Line_37"
-                data-name="Line 37"
-                x1="21"
-                y1="21.143"
-                transform="translate(1037.5 876.5)"
-                fill="none"
-                stroke="#eee"
-                stroke-linecap="round"
-                stroke-width="11"
-              />
-            </g>
-          </svg>
-        </div>
+          <a href="#">
+            <img class="arrow" style="height: 40px;" src="/images/down arrow.svg" />
+          </a>
+  </div>
 
         <svg
           class="hero-shapes"
@@ -494,12 +411,12 @@
       tl.from(
         ".arrow",
         {
-          y: "-90%",
+          y: "-50%",
           opacity: 0,
-          duration: 2,
+          duration: 5,
           ease: "elastic.out(1, 0.3)",
         },
-        "-=9"
+        "-=2"
       );
 
       gsap.from(".transition2", {

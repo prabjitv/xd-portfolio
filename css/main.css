@@ -19,10 +19,6 @@ img {
   width: 100%;
 }
 
-.splashpage {
-  height: 100vh;
-}
-
 .nav-container {
   background: #032fbf;
   -webkit-box-pack: justify;
@@ -54,8 +50,10 @@ header ul {
 }
 
 header ul a {
-  display: block;
-  padding: 0 0 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 0 1em;
 }
 
 .headline {
@@ -73,7 +71,7 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4em;
+  padding: 3em;
 }
 
 section {
@@ -265,7 +263,7 @@ section {
     background: #032fbf;
   }
   header {
-    padding: 2em;
+    padding: 2em 1em 2em 2em;
   }
   .social-header {
     padding: 0em;

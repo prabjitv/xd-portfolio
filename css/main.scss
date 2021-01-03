@@ -16,9 +16,9 @@ img {
   width: 100%;
 }
 
-.splashpage {
-  height: 100vh;
-}
+// .splashpage {
+//   height: 100vh;
+// }
 
 // .nav ul li a {
 //     font-size: 1.5vw;
@@ -38,12 +38,13 @@ header {
   padding: 1em;
   align-items: center;
   justify-content: space-between;
+
   ul {
     display: flex;
 
     a {
-      display: block;
-      padding: 0 0 0 2em;
+      display: flex;
+      padding: 0 0 0 1em;
     }
   }
 }
@@ -61,7 +62,7 @@ header {
   background: #0840f6;
   color: #eeeeee;
   display: flex;
-  padding: 4em;
+  padding: 3em;
 }
 
 section {
@@ -238,7 +239,7 @@ section {
     }
   }
   header {
-    padding: 2em;
+    padding: 2em 1em 2em 2em;
   }
   .social-header {
     padding: 0em;
@@ -274,7 +275,6 @@ section {
 
         a {
           align-items: center;
-
         }
       }
     }
