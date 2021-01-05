@@ -80,21 +80,24 @@ section {
   z-index: -1;
 }
 
-.subtitle {
+.work-type {
   text-transform: uppercase;
   font-weight: bold;
   color: #0840f6;
   letter-spacing: 1em;
 }
 
+//recent work
+
 .recent-title-Nur {
   color: #ff0000;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .recent-title-Market {
   color: #000000;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -102,11 +105,12 @@ section {
   color: #111111;
   font-weight: 600;
   font-size: 1em;
-  margin-bottom: 3em;
-  font-size: 0.7em;
+  margin-bottom: 1em;
   line-height: 1.8em;
   font-weight: 500;
 }
+
+//skills
 
 .skills {
   background: #0840f6;
@@ -144,17 +148,40 @@ section {
   margin-bottom: 2em;
 }
 
+//capstone
+
 .capstone {
   background: #eeeeee;
+  position: relative;
+  z-index: 2;
+}
+
+.proj-title {
+  color: #032fbf;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .capstone-container a img {
   border-radius: 10px;
+  padding: 0px;
   margin-bottom: 2em;
 }
 
+.proj-desc {
+  color: #111111;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 3em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+//resume
+
 .resume {
   background: #0840f6;
+  position: relative;
 }
 
 .resume-container ul li {
@@ -181,40 +208,93 @@ section {
   }
 }
 
+//concept
+
+.concept {
+  background: #eeeeee;
+  position: relative;
+  z-index: 22;
+}
+
+.proj-title {
+  color: #032fbf;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.concept-container img {
+  border-radius: 10px;
+  padding: 0px;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-desc {
+  color: #111111;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 3em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.footer {
+  background: #032fbf;
+  color: #eeeeee;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 1000px) {
   .recent,
-  .capstone {
+  .capstone,
+  .concept {
     text-align: left;
   }
   .recent,
-  .capstone-container {
+  .capstone-container,
+  .concept-container {
     display: grid;
     grid-template-columns: 40% auto;
   }
+
+  .concept-container {
+    align-items: center;
+  }
   .left,
-  .capstone-left {
+  .capstone-left,
+  .concept-left {
     display: grid;
-    place-content: center;
+    // place-content: center;
   }
   .right {
     margin-left: 2em;
     margin-top: 1em;
   }
-  .skills {
+  .skills,
+  .resume {
     margin-top: -5em;
     margin-bottom: -7em;
     padding-top: 7em;
   }
-  .skills-container ul {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
+  .skills-container,
+  .resume-container {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 1em;
+    }
   }
-  .capstone {
+  .capstone,
+  .concept {
     padding-top: 7em;
   }
-  .capstone-container img {
-    margin-left: 2em;
+  .capstone-container,
+  .concept-container {
+    img {
+      margin-left: 2em;
+    }
   }
 }
 
@@ -226,12 +306,10 @@ section {
 }
 
 @media only screen and (min-width: 1100px) {
-  .splashpage {
-    height: 100vh;
-  }
   .nav-container {
     display: grid;
-    grid-template-columns: 66% 66%;
+    grid-template-columns: 66% auto;
+    justify-content: space-between;
     background: unset;
 
     header {
@@ -241,12 +319,6 @@ section {
   header {
     padding: 2em 1em 2em 2em;
   }
-  .social-header {
-    padding: 0em;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-  }
   section {
     padding: 4em;
   }
@@ -254,26 +326,31 @@ section {
   .social-header {
     display: flex;
     padding: 2em;
+    justify-content: flex-end;
+
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
 
       .one {
         width: 30px;
       }
       .two {
-        width: 25px;
+        width: 35px;
       }
       .three {
-        width: 22px;
+        width: 21px;
       }
 
       li {
         padding: 0em 2em 0em 0em;
         align-items: center;
+        justify-content: flex-end;
 
         a {
+          justify-content: flex-end;
+
           align-items: center;
         }
       }
@@ -297,15 +374,6 @@ section {
     }
   }
 
-  // .stagger1 {
-  //   display: flexbox;
-  //   justify-content: right;
-
-  // }
-
-  .hero-arrow {
-    // margin: unset;
-  }
   .hero-shapes {
     display: unset;
     margin-left: -50%;
@@ -322,9 +390,6 @@ section {
   section {
     padding: 10em 10em 4em 10em;
   }
-  .hero .content {
-    // padding: 6em 8em 0em 8em;
-  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -334,12 +399,10 @@ section {
   section {
     padding: 6em 20em 4em 20em;
   }
-  .hero .content {
-    // padding: 9em 20em 6em 20em;
-  }
 }
 
 .arrow {
+  padding: 13em 0em 0em 0em;
   justify-content: center;
   justify-items: center;
   align-content: flex-end;
