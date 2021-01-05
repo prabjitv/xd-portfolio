@@ -72,6 +72,7 @@ section {
 
 .recent {
   position: relative;
+  margin-bottom: 2em;
 }
 .left {
   position: absolute;
@@ -87,6 +88,20 @@ section {
   letter-spacing: 1em;
 }
 
+.skill-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0840f6;
+}
+
+.skill-desc {
+  font-weight: bold;
+}
+
+.edu {
+  width: 50px;;
+}
+
 //recent work
 
 .recent-title-Nur {
@@ -97,7 +112,7 @@ section {
 
 .recent-title-Market {
   color: #000000;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
 }
 
