@@ -135,6 +135,7 @@ section {
 
 .skills {
   background: #0840f6;
+  padding: 3em;
 }
 
 .skills-container ul li {
@@ -201,7 +202,7 @@ section {
 
 .resume {
   background: #0840f6;
-  position: relative;
+  padding: 3em;
 }
 
 .resume-container ul li {
@@ -224,11 +225,11 @@ section {
 }
 
 .resume-container ul li .icon-container.two {
-  width: 273px;
+  width: 253px;
 }
 
 .resume-container ul li .icon-container.three {
-  width: 280px;
+  width: 200px;
 }
 
 .concept {
@@ -301,7 +302,7 @@ section {
     display: grid;
   }
   .right {
-    margin-left: 2em;
+    margin: 1em 0em -10em 2em;
     margin-top: 1em;
   }
   .skills,
